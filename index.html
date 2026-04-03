@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create 67</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .hero-section {
+            min-height: 100vh;
+            background: white;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .orange-circle {
+            width: 120px;
+            height: 120px;
+            background-color: #ff6600;
+            border-radius: 50%;
+            margin: 0 auto 2rem auto;
+            animation: morphSpin 4s ease-in-out infinite;
+        }
+        
+        @keyframes morphSpin {
+            0% {
+                transform: rotate(0deg) scale(1);
+                border-radius: 50%;
+            }
+            25% {
+                transform: rotate(90deg) scale(0.8);
+                border-radius: 30%;
+            }
+            50% {
+                transform: rotate(180deg) scale(0);
+                border-radius: 0%;
+            }
+            75% {
+                transform: rotate(270deg) scale(0.8);
+                border-radius: 30%;
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+                border-radius: 50%;
+            }
+        }
+        
+        .business-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .business-description {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            max-width: 600px;
+            line-height: 1.6;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .business-name {
+                font-size: 2.5rem;
+            }
+            .business-description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <div class="orange-circle"></div>
+                    <h1 class="business-name">Create 67</h1>
+                    <p class="business-description">
+                        We specialize in guerrilla marketing with strategic execution across physical and digital mediums. Our unconventional approach delivers extreme marketing results that cut through the noise and create lasting impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
